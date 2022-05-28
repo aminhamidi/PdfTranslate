@@ -38,7 +38,6 @@ git commit.txt
 
 /version_98
 /venv
-/PdfFile/*
 /__pycache__
 /archive
 
