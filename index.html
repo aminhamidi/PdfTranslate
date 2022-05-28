@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./static/css/font.css"
+    />
+    <link rel="stylesheet" href="./static/css/cssFile.css" />
+  </head>
+  <body>
+    <div class="Wordss"></div>
+    <div class="cunter"></div>
+    <div>
+      <div style="display: flex; justify-content: center">
+        <textarea name="textarea" id="textarea" cols="100" rows="5"></textarea>
+        <span class="lentextare"></span>
+        <div>
+          <button class="submit-bttn">translate</button>
+          <button class="copyText">clear Text</button>
+          <button class="transslatWord">open transslat a word </button></br>
+          <button class="transslattext">transslat a text</button>
+          <button class="enddddd">end</button>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <textarea
+          name="result_tarjome"
+          id="result_tarjome"
+          cols="85"
+          rows="7"
+        ></textarea
+        ><textarea
+          name="result_google"
+          id="result_google"
+          cols="85"
+          rows="7"
+        ></textarea>
+      </div>
+    </div>
+    <div class="siteOrpdf">
+      site : <input class="siteeeeeeeeeeeee_radio"  type="radio" name="checkSiteOrPdf" value="site"> | 
+      pdf : <input  class="pdfffffffffffff_radio" type="radio" name="checkSiteOrPdf" checked value="pdf">
+      <div id="pdfffffffffffff" style="height: 540px;"></div>
+      <div id="siteeeeeeeeeeeee"></div>
+    </div>
+<div
+      class="wordAlert ui-widget-content tabs"
+      id="draggable"
+      style="
+        position: absolute;
+        z-index: 10000;
+        border: 1.5px solid black;
+        border-radius: 10%;
+        background-color: white;
+        font-size: 1.5rem;
+        padding: 20px;
+        display: none;
+      "
+    >
+      <div class="closeee">
+        <svg
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-x-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+          />
+        </svg>
+      </div>
+      <ul>
+        <!-- <li><a href="#tabs-1" class="tabs-1_link">read</a></li>
+        <li><a href="#tabs-2" class="tabs-2_link">update</a></li> -->
+      </ul>
+      <div id="tabs-1"></div>
+      <!-- <div id="tabs-2">
+        <br>
+        <br>
+        index_ : <input type="text" class="_edit_index_"><br>
+        en : <input type="text" class="_edit_en"><br>
+        fa : <input type="text" class="_edit_fa"><br>
+        pronunciation : <input type="text" class="_edit_pronunciation"><br>
+        example : <input type="text" class="_edit_example"><br>
+        words_category : <input type="text" class="_edit_words_category"><br>
+        description : <input type="text" class="_edit_description"><br>
+        is_deleted : <input type="text" class="_edit_is_deleted"><br>
+        <button class="edit_donee">submit</button>
+      </div> -->
+    </div>
+    <script src="http://localhost:8000/staticF/jquery-3.5.1.min.js"></script>
+    <script src="http://localhost:8000/staticF/jquery-ui.js"></script>
+    <script src="http://localhost:8000/staticF/jsFile.js"></script>
+    <script src="http://localhost:8000/staticF/pdfobject.js"></script>
+    <script>
+      PDFObject.embed(
+        "file:///C:/Users/98/Desktop/project/python/PdfTranslate/PdfFile/",
+        "#pdfffffffffffff");
+    </script>
+  </body>
+</html>
+گوگل ترنسلت اگر متن بیشتر از 900 800 تا  کلمه بشه دیگه پیش نهاد 2 ترجمه نمی ده
+<br>

@@ -1,0 +1,11 @@
+﻿en,fa
+On the other hand,از سوی دیگر/از جهت دیگر
+implement,پیاده سازی
+implementation,پی
+implemented,پیاده سازی شده/اجرا شده
+explicitly,صراحتا
+explicit,صریح/واضح/روشن
+instance,نمونه
+so far,تاحالا
+non-essential,غیر حساس
+as well as,همچنین
