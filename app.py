@@ -1,4 +1,4 @@
-import urllib.parse
+﻿import urllib.parse
 import re
 import time
 from dbConnetion import *
@@ -186,14 +186,21 @@ def tarjome():
     test = re.split("\.|\. ", test)
 
     temppp = ""
-    for e in test:
-        temppp += e  + "\n"
+    for count, e in enumerate(test):
+        temppp += str(count + 1) + "-" + e  + "\n"
 
     clearr = WebDriverWait(targomanD, 10000).until(
         EC.presence_of_element_located(
             (By.CSS_SELECTOR, '.toolbar-button'))
     )
 
+    btn_tran = WebDriverWait(targomanD, 10000).until(
+        EC.presence_of_element_located(
+            (By.CSS_SELECTOR, "div[data-action='translate']"))
+    )
+
+
+    btn_tran.click()
     clearr.click()
 
     return temppp
